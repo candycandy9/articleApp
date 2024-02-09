@@ -1,0 +1,19 @@
+.card:hover {
+    box-shadow: 0 4px 8px rgba(1, 4, 10, 0.1);
+    transform: scale(1.025,1.025);
+    transition: box-shadow 0.3s ease;
+  }
+  
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-header{
+    background-color: rebeccapurple;
+    color:white;
+}
+.card-title{
+    font-size:1.25rem;
+}
+.card-body{
+    background-color: lightcyan;
+}

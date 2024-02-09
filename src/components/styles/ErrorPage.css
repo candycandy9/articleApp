@@ -1,0 +1,11 @@
+.error-page{
+    text-align: center;
+    padding:60px;
+    border:2px solid black ;
+    border-radius: 6px;
+    font-size: 2rem;
+    height: calc(100vh - 80px);
+    background-color: white;
+    color: red;
+    vertical-align: middle;
+}

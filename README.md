@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Articles App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Technology used
+ReactJS, TypeScript, React Bootstrap, CSS
+
+# Approach Used
+- Store the Articles in data.json file. Fetch the data from JSON file using fetch API in useEffect hook.
+- Make use of useState hook to store the data like articles, loading and error.
+- When API call is made display the Loader until the response is Successful or errored out.
+- In case of failure during the fetch call, display Error Page.
+- Wrap the main ArticleList component with ErrorBoundary component created using Class based component, on failure display reusable component Error page and log error and component stack details in console.
+- On success, render the articles in a Card component of react bootstrap.
 
 ## Available Scripts
 
@@ -39,8 +50,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
