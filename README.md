@@ -8,10 +8,19 @@ ReactJS, TypeScript, React Bootstrap, CSS
 # Approach Used
 - Store the Articles in data.json file. Fetch the data from JSON file using fetch API in useEffect hook.
 - Make use of useState hook to store the data like articles, loading and error.
-- When API call is made display the Loader until the response is Successful or errored out.
+- When API call is made, display the Loader until the response is Successful or errored out.
 - In case of failure during the fetch call, display Error Page.
-- Wrap the main ArticleList component with ErrorBoundary component created using Class based component, on failure display reusable component Error page and log error and component stack details in console.
+- Wrap every Article with ErrorBoundary component created using Class based approach, on failure display error message which is rendered by ErrorBoundary Component and log error and component stack details in console. This is done so that entire page does not crash, instead only the article with issues will show error message.
 - On success, render the articles in a Card component of react bootstrap.
+
+Success Scenario
+![image](https://github.com/candycandy9/articleApp/assets/24561903/8431ccab-d819-4cf2-acdb-c2e702662196)
+
+Error in rendering Article
+![image](https://github.com/candycandy9/articleApp/assets/24561903/e4df0f5c-3db7-421b-bb36-5569eebd3307)
+
+Failure in fetching data
+![image](https://github.com/candycandy9/articleApp/assets/24561903/762ed0e4-aca1-438d-91b3-8c20f9a2692c)
 
 ## Available Scripts
 
