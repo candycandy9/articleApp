@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {Article} from './models/article';
-import {ArticleList, ErrorBoundary, ErrorPage, Loader} from './components';
+import {ArticleList, ErrorPage, Loader} from './components';
 
 function App() {
   const [articles, setArticles] = useState<Article[]>([]);
@@ -30,12 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? <Loader/> : error ? <ErrorPage/> : (
-        <ErrorBoundary>
-          <h1 className="title">ARTICLES</h1>
-          {<ArticleList articles={articles} />}
-        </ErrorBoundary>
-      )}
+       {loading ? <Loader/> : error ? <ErrorPage/> : <ArticleList articles={articles} />}
       </div>
   )
 }
